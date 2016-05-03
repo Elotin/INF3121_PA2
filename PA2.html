@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://demo.avactis.com/" />
+<title>Register and log in</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Register and log in</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/4.7.9/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=My Account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=button.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Math.round (Math.random() * 1357)</td>
+	<td>random</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][Email]</td>
+	<td>selenium${random}@domain.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][Password]</td>
+	<td>somepassword123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][RePassword]</td>
+	<td>somepassword123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][FirstName]</td>
+	<td>Random dude</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][LastName]</td>
+	<td>random</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=customer_info_Customer_Country</td>
+	<td>label=Netherlands</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][ZipCode]</td>
+	<td>0124</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][City]</td>
+	<td>Amsterdam</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][Streetline1]</td>
+	<td>Red light district 23</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=customer_info[Customer][Phone]</td>
+	<td>12345678</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Register']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/4.7.9/register.php</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Change Password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=account_change_password_form_current_password_id</td>
+	<td>somepassword123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=account_change_password_form_new_password_id</td>
+	<td>somepassword1234</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=account_change_password_form_retype_password_id</td>
+	<td>somepassword1234</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Continue']</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
